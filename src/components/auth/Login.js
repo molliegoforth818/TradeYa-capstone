@@ -59,22 +59,7 @@ const Login = props => {
               placeholder="Password"
               required=""
             />
-             <label htmlFor="inputLocation">Location: </label>
-            <input
-              onChange={handleFieldChange}
-              type="location"
-              id="location"
-              placeholder="location"
-              required=""
-            />
-             <label htmlFor="inputPersonalStyleDescription">Personal Style Description: </label>
-            <input
-              onChange={handleFieldChange}
-              type="personalStyleDescription"
-              id="personalStyleDescription"
-              placeholder="personalStyleDescription"
-              required=""
-            />
+           
           </div>
           <button type="submit">Log in</button>
 
