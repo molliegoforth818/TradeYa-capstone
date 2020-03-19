@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import Login from "./auth/Login";
 import NewUserForm from "./auth/NewUserForm"
+import ClosetList from "./ClosetProfile/ClosetList"
 
 
 
@@ -15,7 +16,11 @@ const ApplicationViews = props => {
         exact
         path="/"
         render={props => {
-          return <Redirect to="/closet" />;
+          if (currentUser) {
+            return <ClosetList currentUser={currentUser} {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
         }}/>
     <Route
     exact
