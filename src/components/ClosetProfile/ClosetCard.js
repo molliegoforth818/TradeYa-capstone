@@ -10,7 +10,7 @@ const ClothingItemCard = props => {
             {props.clothingItem.itemDescription}{" "}
           </span>
         </h3>
-        <p> Size: {props.clothingItem.size} </p>
+        <p> Size: {props.clothingItem.sizeId} </p>
         <button
           type="button"
           onClick={() =>
