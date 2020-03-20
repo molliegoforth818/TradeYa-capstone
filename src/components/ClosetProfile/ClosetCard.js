@@ -1,22 +1,33 @@
-import React from 'react'
-import ClosetManager from "../../modules/ClosetManager"
-
+import React from "react";
+import ClosetManager from "../../modules/ClosetManager";
 
 const ClosetCard = props => {
-return (
+  return (
     <div className="closetCard">
-    <div className="closetCard__content">
-        <h3>Title: <span className="closetCard__itemdescription">
-            {props.clothingItem.itemDescription} </span></h3>
+      <div className="closetCard__content">
+        <h3>
+          Item Description:{" "}
+          <span className="closetCard__itemdescription">
+            {props.clothingItem.itemDescription}{" "}
+          </span>
+        </h3>
         <p> Size: {props.clothingItem.size} </p>
-        <p> URL: {props.news.url} </p>
-        <button type="button"
-           onClick={() => props.history.push(`/${props.news.id}/editnews`)}>
-               Edit News 
-        </button>    
-        <button type="button" onClick={() => props.deleteNews(props.news.id)}>Delete News</button>
+        <button
+          type="button"
+          onClick={() =>
+            props.history.push(`/${props.clothingItem.id}/editclothingitem`)
+          }
+        >
+          Edit Item
+        </button>
+        <button
+          type="button"
+          onClick={() => props.deleteClothing(props.clothingItem.id)}
+        >
+          Delete Item
+        </button>
+      </div>
     </div>
-
-</div>
-)
-}
+  );
+};
+export default ClosetCard

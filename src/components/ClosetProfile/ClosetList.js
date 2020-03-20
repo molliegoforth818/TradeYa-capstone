@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import React from 'react'
-// import ClosetCard from "./closet/ClosetCard"
+import ClosetCard from './ClosetCard'
 import ClosetManager from "../../modules/ClosetManager"
 
 const ClosetList = (props) => {
@@ -31,7 +30,7 @@ const ClosetList = (props) => {
   </button>
             </section>
             <div className="container-closetCards">
-                {tasks.map(clothingItem =>
+                {closet.map(clothingItem =>
                     <ClosetCard
                         key={clothingItem.id}
                         clothingItem={clothingItem}
@@ -42,3 +41,4 @@ const ClosetList = (props) => {
         </React.Fragment>
     )
 }
+export default ClosetList

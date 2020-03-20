@@ -87,6 +87,9 @@ const NewUserForm = props => {
         <button disabled={isAvailable} type="submit">
           Add User
         </button>
+        <button disabled={isAvailable} type="submit"onClick={() =>{ props.history.push("/login")}}>
+          Back
+        </button>
       </fieldset>
     </form>
   );

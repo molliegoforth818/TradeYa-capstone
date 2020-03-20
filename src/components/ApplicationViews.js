@@ -12,16 +12,6 @@ const ApplicationViews = props => {
     
     return (
     <React.Fragment>
-         <Route
-        exact
-        path="/"
-        render={props => {
-          if (currentUser) {
-            return <ClosetList currentUser={currentUser} {...props} />;
-          } else {
-            return <Redirect to="/login" />;
-          }
-        }}/>
     <Route
     exact
     path="/login"
@@ -29,6 +19,17 @@ const ApplicationViews = props => {
       return <Login setAsUser={setAsUser} {...props} />;
     }}
     />
+          <Route
+        exact
+        path="/closet"
+        render={props => {
+          if (currentUser) {
+            return <ClosetList currentUser={currentUser} {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
+        }}
+      />
      <Route
         exact
         path="/newuser"
