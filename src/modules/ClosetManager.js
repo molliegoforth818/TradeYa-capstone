@@ -14,5 +14,14 @@ export default{
     },
 getAllClothingItemsByUser() {
     return fetch (`${baseURL}/clothingItem?_expand=user`).then(resp => resp.json());
-}
+},
+update(editedClothingItem) {
+    return fetch (`${baseURL}/clothingItem/${editedClothingItem.id}`, {
+      method:"PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedClothingItem)
+    }).then(data=> data.json());
+  },
 }

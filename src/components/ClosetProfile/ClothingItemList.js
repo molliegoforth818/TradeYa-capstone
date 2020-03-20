@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ClosetCard from "./ClosetCard";
+import ClothingItemCard from "./ClothingItemCard";
 import ClosetManager from "../../modules/ClosetManager";
 
 const ClothingItemList = props => {
@@ -34,7 +34,7 @@ useEffect(() => {
       </section>
       <div className="container-closetCards">
         {clothingItem.map(clothingItem => (
-          <ClosetCard
+          <ClothingItemCard
             key={clothingItem.id}
             clothingItem={clothingItem}
             deleteClothingItem={deleteClothingItem}
