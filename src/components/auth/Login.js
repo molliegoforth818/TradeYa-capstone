@@ -19,15 +19,16 @@ const Login = props => {
     LoginManager.getUsers().then(userArray => {
       const user = userArray.find(
         el =>
-          el.email === userCredentials.email &&
+          el.username === userCredentials.username &&
           el.password === userCredentials.password
       );
 
       if (user !== undefined) {
         props.setAsUser(user.id);
+        props.history.push("/closet")
       } else {
         alert("Invalid information! Try again or register an account");
-      }
+        };
     });
   };
 

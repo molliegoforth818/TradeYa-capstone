@@ -1,7 +1,6 @@
 import React from "react";
-import ClosetManager from "../../modules/ClosetManager";
 
-const ClosetCard = props => {
+const ClothingItemCard = props => {
   return (
     <div className="closetCard">
       <div className="closetCard__content">
@@ -30,4 +29,4 @@ const ClosetCard = props => {
     </div>
   );
 };
-export default ClosetCard
+export default ClothingItemCard
