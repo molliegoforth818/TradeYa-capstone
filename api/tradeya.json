@@ -111,7 +111,7 @@
       "itemDescription": "so and so skirt",
       "size": "medium",
       "userId": 3,
-      "isTraded": true,
+      "isTraded": false,
       "clothingPic": "img"
     },
     {
@@ -127,7 +127,7 @@
       "itemDescription": "so and so jeans",
       "size": "medium",
       "userId": 4,
-      "isTraded": true,
+      "isTraded": false,
       "clothingPic": "img"
     },
     {
@@ -152,11 +152,11 @@
       "id": 7
     },
     {
-      "userId": "1",
+      "id": 8,
       "itemDescription": " blouse",
       "size": "medium",
-      "isTraded": false,
-      "id": 8
+      "isTraded": true,
+      "userId": 1
     }
   ],
   "clothingLend": [

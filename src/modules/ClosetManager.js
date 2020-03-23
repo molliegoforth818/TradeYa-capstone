@@ -32,5 +32,15 @@ update(editedClothingItem) {
       },
       body: JSON.stringify(editedClothingItem)
     }).then(data=> data.json());
-  }
-}
+  },
+  isTraded(editedClothingItem){
+    return fetch (`${baseURL}/clothingItem/${editedClothingItem.id}`,{
+        method:"PATCH",
+        body: JSON.stringify({
+            isTraded: true 
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        },
+    }) .then(resp => resp.json());
+  }}

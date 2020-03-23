@@ -5,8 +5,7 @@ const userNow = parseInt(sessionStorage.getItem("userCredentials"));
 const EditClothingItemForm = props => {
     const [clothingItem, setClothingItem] = useState ({
 itemDescription: "",
-size: "",
-isTraded:false
+size: ""
     });
     const [isLoading, setIsLoading] = useState(false);
     const handleFieldChange = evt => {
@@ -22,7 +21,6 @@ isTraded:false
           id: props.match.params.clothingItemId,
           itemDescription: clothingItem.itemDescription,
           size: clothingItem.size,
-          isTraded: true,
           userId: userNow
         };
         ClosetManager.update(editedClothingItem).then(() => props.history.push("/closet"));
@@ -57,7 +55,7 @@ return (
                   id="size"
                   value={clothingItem.size}
                 />
-              </div>
+                </div>
               <div className="alignRight">
                 <button
                   type="button"
