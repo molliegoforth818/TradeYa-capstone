@@ -6,9 +6,14 @@ const EditClothingItemForm = props => {
     const [clothingItem, setClothingItem] = useState ({
 itemDescription: "",
 sizeId: "",
-isTraded:""
+isTraded:false
     });
     const [isLoading, setIsLoading] =useState(false);
+    const handleFieldChange = evt => {
+        const stateToChange = { ...clothingItem };
+        stateToChange[evt.target.id] = evt.target.value;
+        setClothingItem(stateToChange);
+      };
     const updateExistingClothingItem = evt => {
         evt.preventDefault();
         setIsLoading(true);
@@ -19,11 +24,11 @@ isTraded:""
           sizeId: clothingItem.sizeId,
           userId: userNow
         };
-        ClosetManger.update(editedClothingItem).then(() => props.history.push("/clothingItem"));
+        ClosetManager.update(editedClothingItem).then(() => props.history.push("/clothingItem"));
       };
     
       useEffect(() => {
-        ClosetManger.get(props.match.params.clothingItemId).then(clothingItem => {
+        ClosetManager.get(props.match.params.clothingItemId).then(clothingItem => {
           setClothingItem(clothingItem);
           setIsLoading(false);
         });

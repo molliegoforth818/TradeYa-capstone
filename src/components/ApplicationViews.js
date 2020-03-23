@@ -3,6 +3,8 @@ import { Route, Redirect } from "react-router-dom";
 import Login from "./auth/Login";
 import NewUserForm from "./auth/NewUserForm";
 import ClothingItemList from "./ClosetProfile/ClothingItemList";
+import EditClothingItemForm from "../components/ClosetProfile/EditClothingItemForm"
+import AddClothingItemForm from "./ClosetProfile/AddClothingItemForm"
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -31,6 +33,22 @@ const ApplicationViews = props => {
         path="/newuser"
         render={props => {
           return <NewUserForm setAsUser={setAsUser} {...props} />;
+        }}
+      />
+        <Route
+        path="/closet/:clothingItemId(\d+)/edit"
+        render={props => {
+          return <EditClothingItemForm {...props} />;
+        }}
+      />
+       <Route
+        path="/closet/addnewclothingitem"
+        render={props => {
+          if (currentUser) {
+            return <AddClothingItemForm {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
         }}
       />
     </React.Fragment>

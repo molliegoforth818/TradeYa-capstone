@@ -1,6 +1,12 @@
 import React from "react";
+import ClosetManager from "../../modules/ClosetManager"
+
 
 const ClothingItemCard = props => {
+const handleFieldChange = () => {
+  ClosetManager.delete(props.clothingItem)
+    .then(() => props.getClothingItem())
+}
   return (
     <div className="closetCard">
       <div className="closetCard__content">
@@ -21,7 +27,7 @@ const ClothingItemCard = props => {
         </button>
         <button
           type="button"
-          onClick={() => props.deleteClothing(props.clothingItem.id)}
+          onClick={handleFieldChange}
         >
           Delete Item
         </button>

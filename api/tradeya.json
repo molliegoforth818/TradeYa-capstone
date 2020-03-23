@@ -145,6 +145,42 @@
       "userId": 4,
       "isTraded": false,
       "clothingPic": "img"
+    },
+    {
+      "userId": "1",
+      "itemDescription": "airmax 270",
+      "size": "6",
+      "isTraded": false,
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "itemDescription": "airmax 270",
+      "size": "6",
+      "isTraded": false,
+      "id": 7
+    },
+    {
+      "userId": "1",
+      "itemDescription": "airmax 270",
+      "size": "6",
+      "isTraded": false,
+      "id": 8
+    },
+    {
+      "userId": "1",
+      "itemDescription": "airmax 270",
+      "sizeId": "",
+      "isTraded": false,
+      "size": "6",
+      "id": 9
+    },
+    {
+      "userId": "1",
+      "itemDescription": "airmax 270",
+      "sizeId": "6",
+      "isTraded": false,
+      "id": 10
     }
   ],
   "clothingLend": [

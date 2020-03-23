@@ -12,10 +12,10 @@ const TradeYa = () => {
         setCurrentUser(isLoggedIn());
     }
 
-    // const clearAsUser = () => {
-    //     sessionStorage.clear();
-    //     setCurrentUser(isLoggedIn());
-    // }
+    const clearAsUser = () => {
+        sessionStorage.clear();
+        setCurrentUser(isLoggedIn());
+    }
 
     return (
         <> 

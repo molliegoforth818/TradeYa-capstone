@@ -5,7 +5,7 @@ import ClosetManager from "../../modules/ClosetManager";
 const ClothingItemList = props => {
   const [clothingItem, setClothingItem] = useState([]);
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
-  const deleteClothingItem = id => {
+  const deleteClothingItem = (id) => {
     ClosetManager.delete(id).then(() => getClothingItem());
   };
   const getClothingItem = () => {
@@ -26,7 +26,7 @@ useEffect(() => {
           type="button"
           className="btn"
           onClick={() => {
-            props.history.push("/closet/addnewitem");
+            props.history.push("/closet/addnewclothingitem");
           }}
         >
           New Clothing Item
