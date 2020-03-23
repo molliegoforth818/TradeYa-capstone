@@ -107,17 +107,9 @@
   ],
   "clothingItem": [
     {
-      "id": 1,
-      "itemDescription": "so and so blouse",
-      "sizeId": "Medium",
-      "userId": 1,
-      "isTraded": false,
-      "clothingPic": "img"
-    },
-    {
       "id": 2,
       "itemDescription": "so and so skirt",
-      "sizeId": "Large",
+      "size": "medium",
       "userId": 3,
       "isTraded": true,
       "clothingPic": "img"
@@ -125,7 +117,7 @@
     {
       "id": 3,
       "itemDescription": "so and so jacket",
-      "sizeId": "Medium",
+      "size": "large",
       "userId": 2,
       "isTraded": false,
       "clothingPic": "img"
@@ -133,7 +125,7 @@
     {
       "id": 4,
       "itemDescription": "so and so jeans",
-      "sizeId": "10",
+      "size": "medium",
       "userId": 4,
       "isTraded": true,
       "clothingPic": "img"
@@ -141,46 +133,30 @@
     {
       "id": 5,
       "itemDescription": "so and so tshirt",
-      "sizeId": "Large",
+      "size": "large",
       "userId": 4,
       "isTraded": false,
       "clothingPic": "img"
     },
     {
-      "userId": "1",
-      "itemDescription": "airmax 270",
-      "size": "6",
-      "isTraded": false,
-      "id": 6
+      "id": 6,
+      "itemDescription": "hair tie",
+      "size": "large",
+      "userId": 1
     },
     {
       "userId": "1",
       "itemDescription": "airmax 270",
-      "size": "6",
+      "size": "large",
       "isTraded": false,
       "id": 7
     },
     {
       "userId": "1",
-      "itemDescription": "airmax 270",
-      "size": "6",
+      "itemDescription": " blouse",
+      "size": "medium",
       "isTraded": false,
       "id": 8
-    },
-    {
-      "userId": "1",
-      "itemDescription": "airmax 270",
-      "sizeId": "",
-      "isTraded": false,
-      "size": "6",
-      "id": 9
-    },
-    {
-      "userId": "1",
-      "itemDescription": "airmax 270",
-      "sizeId": "6",
-      "isTraded": false,
-      "id": 10
     }
   ],
   "clothingLend": [

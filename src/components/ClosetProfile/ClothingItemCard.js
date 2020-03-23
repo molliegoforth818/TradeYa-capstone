@@ -1,12 +1,6 @@
 import React from "react";
-import ClosetManager from "../../modules/ClosetManager"
-
 
 const ClothingItemCard = props => {
-const handleFieldChange = () => {
-  ClosetManager.delete(props.clothingItem)
-    .then(() => props.getClothingItem())
-}
   return (
     <div className="closetCard">
       <div className="closetCard__content">
@@ -16,7 +10,7 @@ const handleFieldChange = () => {
             {props.clothingItem.itemDescription}{" "}
           </span>
         </h3>
-        <p> Size: {props.clothingItem.sizeId} </p>
+        <p> Size: {props.clothingItem.size} </p>
         <button
           type="button"
           onClick={() =>
@@ -27,7 +21,7 @@ const handleFieldChange = () => {
         </button>
         <button
           type="button"
-          onClick={handleFieldChange}
+          onClick={() => props.deleteClothingItem(props.clothingItem.id)}
         >
           Delete Item
         </button>
@@ -35,4 +29,4 @@ const handleFieldChange = () => {
     </div>
   );
 };
-export default ClothingItemCard
+export default ClothingItemCard;

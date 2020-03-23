@@ -5,8 +5,10 @@ import ClosetManager from "../../modules/ClosetManager";
 const ClothingItemList = props => {
   const [clothingItem, setClothingItem] = useState([]);
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
+  
   const deleteClothingItem = (id) => {
-    ClosetManager.delete(id).then(() => getClothingItem());
+    ClosetManager.deleteClothingItem(id)
+    .then(() => getClothingItem());
   };
   const getClothingItem = () => {
     return ClosetManager.getAllClothingItemsByUser().then(clothingItemsFromAPI => {

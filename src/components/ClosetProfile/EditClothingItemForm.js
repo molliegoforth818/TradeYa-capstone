@@ -5,10 +5,10 @@ const userNow = parseInt(sessionStorage.getItem("userCredentials"));
 const EditClothingItemForm = props => {
     const [clothingItem, setClothingItem] = useState ({
 itemDescription: "",
-sizeId: "",
+size: "",
 isTraded:false
     });
-    const [isLoading, setIsLoading] =useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const handleFieldChange = evt => {
         const stateToChange = { ...clothingItem };
         stateToChange[evt.target.id] = evt.target.value;
@@ -21,10 +21,11 @@ isTraded:false
         const editedClothingItem = {
           id: props.match.params.clothingItemId,
           itemDescription: clothingItem.itemDescription,
-          sizeId: clothingItem.sizeId,
+          size: clothingItem.size,
+          isTraded: true,
           userId: userNow
         };
-        ClosetManager.update(editedClothingItem).then(() => props.history.push("/clothingItem"));
+        ClosetManager.update(editedClothingItem).then(() => props.history.push("/closet"));
       };
     
       useEffect(() => {
@@ -47,14 +48,14 @@ return (
                   id="itemDescription"
                   value={clothingItem.itemDescription}
                 />
-                <label htmlFor="sizeId">Size: </label>
+                <label htmlFor="size">Size: </label>
                 <input
                   type="text"
                   required
                   className="form-control"
                   onChange={handleFieldChange}
-                  id="sizeid"
-                  value={clothingItem.sizeId}
+                  id="size"
+                  value={clothingItem.size}
                 />
               </div>
               <div className="alignRight">

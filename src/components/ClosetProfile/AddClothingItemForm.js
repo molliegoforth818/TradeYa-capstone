@@ -7,7 +7,7 @@ const AddClothingItemForm = props => {
   const [clothingItem, setClothingItem] = useState({
     userId: userCred,
    itemDescription: "",
-    sizeId: "",
+    size: "",
     isTraded: false
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -43,13 +43,13 @@ const AddClothingItemForm = props => {
               placeholder="itemDescription"
             />
 
-            <label htmlFor="sizeId">Size: </label>
+            <label htmlFor="size">Size: </label>
             <input
               type="text"
               required
               onChange={handleFieldChange}
-              id="sizeId"
-              placeholder="sizeId"
+              id="size"
+              placeholder="size"
             />
           </div>
           <div className="alignRight">

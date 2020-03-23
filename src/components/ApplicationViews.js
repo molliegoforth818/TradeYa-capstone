@@ -36,7 +36,7 @@ const ApplicationViews = props => {
         }}
       />
         <Route
-        path="/closet/:clothingItemId(\d+)/edit"
+        path="/:clothingItemId(\d+)/editclothingitem"
         render={props => {
           return <EditClothingItemForm {...props} />;
         }}
