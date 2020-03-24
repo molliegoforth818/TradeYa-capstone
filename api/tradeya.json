@@ -172,7 +172,7 @@
     {
       "id": 1,
       "userId": 1,
-      "clothingItemId": 2,
+      "clothingItemId": 1,
       "datetime": "",
       "isReturned": false
     },
@@ -189,6 +189,13 @@
       "clothingItemId": 4,
       "datetime": "",
       "isReturned": false
-    }
+    },
+    {
+        "id": 4,
+        "userId": 4,
+        "clothingItemId": 4,
+        "datetime": "",
+        "isReturned": false
+      },
   ]
 }

@@ -30,25 +30,13 @@ const NavBar = props => {
           <li>
             <NavLink
               className="navlink"
-              to="/tasks"
+              to="/donationpile"
               activeStyle={{
                 fontWeight: "bold",
-                color: "red"
+                color: "mint green"
               }}
             >
-              Tasks
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="navlink"
-              to="/news"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "red"
-              }}
-            >
-              
+              Donation Pile
             </NavLink>
           </li>
           <li>
