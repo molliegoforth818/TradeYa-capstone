@@ -38,8 +38,8 @@ useEffect(() => {
         {clothingItem.map(clothingItem => (
           <GroupClosetCard
             key={groupCloset.id}
-            clothingItem={clothingItem}
-            deleteClothingItem={deleteClothingItem}
+            groupCloset={groupCloset}
+            deleteGroupCloset={deleteClothingItem}
             getClothingItem={getClothingItem}
             {...props}
           />
