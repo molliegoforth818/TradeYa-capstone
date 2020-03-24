@@ -139,23 +139,16 @@
       "clothingPic": "img"
     },
     {
-      "id": 6,
-      "itemDescription": "hair tie",
-      "size": "large",
-      "userId": 1
-    },
-    {
-      "userId": "1",
-      "itemDescription": "airmax 270",
-      "size": "large",
-      "isTraded": false,
-      "id": 7
-    },
-    {
       "id": 8,
       "itemDescription": " blouse",
       "size": "medium",
       "isTraded": true,
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "itemDescription": "airmax 270",
+      "size": "7",
       "userId": 1
     }
   ],

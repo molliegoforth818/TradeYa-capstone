@@ -65,6 +65,9 @@ return (
                 >
                   Submit
                 </button>
+                <button type="submit"onClick={() =>{ props.history.push("/closet")}}>
+          Back
+        </button>
               </div>
             </fieldset>
           </form>
