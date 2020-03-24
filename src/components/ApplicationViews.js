@@ -51,6 +51,16 @@ const ApplicationViews = props => {
           }
         }}
       />
+       <Route
+        exact
+        path="/{groupcloset}"
+        render={props => {
+          if (currentUser) {
+            return <EventsList currentUser={currentUser} {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
+        }}
     </React.Fragment>
   );
 };

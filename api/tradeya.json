@@ -69,13 +69,6 @@
       "password": "123",
       "location": "houston, tx",
       "personalStyleDescription": "TheQueen"
-    },
-    {
-      "username": "yo",
-      "password": "1234",
-      "location": "nashy,tn",
-      "personalStyleDescription": "yo",
-      "id": 11
     }
   ],
   "groupCloset": [
@@ -108,7 +101,7 @@
   "clothingItem": [
     {
       "id": 2,
-      "itemDescription": "so and so skirt",
+      "itemDescription": "FashionNova Skirt",
       "size": "medium",
       "userId": 3,
       "isTraded": false,
@@ -116,7 +109,7 @@
     },
     {
       "id": 3,
-      "itemDescription": "so and so jacket",
+      "itemDescription": "OFF-WHITE Jacket",
       "size": "large",
       "userId": 2,
       "isTraded": false,
@@ -124,32 +117,55 @@
     },
     {
       "id": 4,
-      "itemDescription": "so and so jeans",
-      "size": "medium",
+      "itemDescription": "Forever21 Jeans",
+      "size": "10",
       "userId": 4,
       "isTraded": false,
       "clothingPic": "img"
     },
     {
       "id": 5,
-      "itemDescription": "so and so tshirt",
+      "itemDescription": "Black Pyramid T-Shirt",
       "size": "large",
-      "userId": 4,
+      "userId": 5,
       "isTraded": false,
       "clothingPic": "img"
     },
     {
       "id": 8,
-      "itemDescription": " blouse",
+      "itemDescription": "Gucci Blouse",
       "size": "medium",
-      "isTraded": true,
-      "userId": 1
+      "isTraded": false,
+      "userId": 6
     },
     {
       "id": 9,
-      "itemDescription": "airmax 270",
+      "itemDescription": "AirMax 270",
       "size": "7",
-      "userId": 1
+      "userId": 7,
+      "clothingPic": "img"
+    },
+    {
+      "id": 10,
+      "itemDescription": "Vintage Ramones Tee",
+      "size": "medium",
+      "userId": 8,
+      "clothingPic": "img"
+    },
+    {
+      "id": 11,
+      "itemDescription": "Express Leather Jacket",
+      "size": "large",
+      "userId": 9,
+      "clothingPic": "img"
+    },
+    {
+      "id": 12,
+      "itemDescription": "IvyPark Backless Hat",
+      "size": "onesize",
+      "userId": 1,
+      "clothingPic": "img",
+      "isTraded": true
     }
   ],
   "clothingLend": [

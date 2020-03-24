@@ -1,8 +1,8 @@
 import React from "react";
-import ClosetManager from "../../modules/ClosetManager";
-// import Toggle from 'react-toggle'
+// import GroupClosetManager from "../../modules/GroupClosetManager";
 
-const ClothingItemCard = props => {
+const GroupClosetCard = props => {
+
   return (
     <div className="closetCard">
       <div className="closetCard__content">
@@ -13,6 +13,7 @@ const ClothingItemCard = props => {
           </span>
         </h3>
         <p> Size: {props.clothingItem.size} </p>
+        <p>User: {props.clothingItem.userId}</p>
         <button
           type="button"
           onClick={() =>
@@ -27,18 +28,17 @@ const ClothingItemCard = props => {
         >
           Delete Item
         </button>
-        <input
+        {/* <input
           type="checkbox"
           required
           className="forms-control"
           id="clothingItem"
           value={false}
-          onChange={() => props.updateClothingItem(props.clothingItem.id)}
-        />
+          onChange={() => props.isTraded(props.clothingItem)}
+        /> */}
         <label htmlFor="isTraded">TradeYa!</label>
       </div>
     </div>
   );
 };
-
-export default ClothingItemCard;
+export default GroupClosetCard;
