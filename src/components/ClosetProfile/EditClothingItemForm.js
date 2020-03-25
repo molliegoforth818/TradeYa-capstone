@@ -1,4 +1,4 @@
-import React, { useState, useEffect, } from "./node_modules/react";
+import React, { useState, useEffect, } from "react";
 import ClosetManager from "../../modules/ClosetManager"
 
 const userNow = parseInt(sessionStorage.getItem("userCredentials"));

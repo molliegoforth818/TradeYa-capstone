@@ -3,10 +3,10 @@ import { Route, Redirect } from "react-router-dom";
 import Login from "./auth/Login";
 import NewUserForm from "./auth/NewUserForm";
 import ClothingItemList from "./closetprofile/ClothingItemList";
-import EditClothingItemForm from "./closetprofile/EditClothingItemForm"
-import AddClothingItemForm from "./closetprofile/AddClothingItemForm"
-import GroupClosetList from "./closetprofile/GroupClosetList"
-import UserList from "./users/UserList"
+import EditClothingItemForm from "./closetprofile/EditClothingItemForm";
+import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
+import GroupClosetList from "./closetprofile/GroupClosetList";
+import UserList from "./users/UserList";
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -37,13 +37,13 @@ const ApplicationViews = props => {
           return <NewUserForm setAsUser={setAsUser} {...props} />;
         }}
       />
-        <Route
+      <Route
         path="/:clothingItemId(\d+)/editclothingitem"
         render={props => {
           return <EditClothingItemForm {...props} />;
         }}
       />
-       <Route
+      <Route
         path="/closet/addnewclothingitem"
         render={props => {
           if (currentUser) {
@@ -53,7 +53,7 @@ const ApplicationViews = props => {
           }
         }}
       />
-       <Route
+      <Route
         exact
         path="/:groupClosetNameId(\d+)/"
         render={props => {
@@ -62,14 +62,16 @@ const ApplicationViews = props => {
           } else {
             return <Redirect to="/login" />;
           }
-        }} />
-        <Route
-        path="users"
+        }}
+      />
+      <Route
+        path="/users"
         render={props => {
-             return <UserList currentUser ={currentUser} {...props}/>;
-             />
+          return <UserList {...props} />;
+        }}
+      />
     </React.Fragment>
   );
 };
 
-export default ApplicationViews
+export default ApplicationViews;

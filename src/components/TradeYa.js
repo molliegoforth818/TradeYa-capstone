@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import ApplicationViews from "./ApplicationViews"
+import NavBar from './nav/NavBar'
+
 
 
 const TradeYa = () => {
@@ -19,6 +21,7 @@ const TradeYa = () => {
 
     return (
         <> 
+            <NavBar currentUser={currentUser} clearAsUser={clearAsUser} />
             <ApplicationViews currentUser={currentUser} setAsUser={setAsUser} />
         </>
     );

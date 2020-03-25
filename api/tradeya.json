@@ -6,70 +6,79 @@
       "password": "123",
       "location": "nashville, tn",
       "personalStyleDescription": "ClassyGothInfluencer",
-      "profilePic": "IMG_4080 (1).HEIC"
+      "profilePic": "img"
     },
     {
       "id": 2,
       "username": "ayejah",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 3,
       "username": "sydneysimone",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 4,
       "username": "whatsyourashworth",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 5,
       "username": "momo_spaghettio",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 6,
       "username": "squirellyjane",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 7,
       "username": "exhaleperp",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 8,
       "username": "queenreen",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 9,
       "username": "loren",
       "password": "123",
       "location": "nashville, tn",
-      "personalStyleDescription": ""
+      "personalStyleDescription": "",
+      "profilePic": "img"
     },
     {
       "id": 10,
       "username": "beyoncé",
       "password": "123",
       "location": "houston, tx",
-      "personalStyleDescription": "TheQueen"
+      "personalStyleDescription": "TheQueen",
+      "profilePic": "https://www.beyonce.com/uploads/2018/12/cache/hfVrZj35NOmT_264x264_74tHK9Wi.jpg"
     }
   ],
   "groupCloset": [
@@ -137,7 +146,7 @@
       "itemDescription": "Gucci Blouse",
       "size": "medium",
       "isTraded": false,
-      "userId": 6
+      "userId": 10
     },
     {
       "id": 9,
@@ -197,6 +206,6 @@
         "clothingItemId": 4,
         "datetime": "",
         "isReturned": false
-      },
+      }
   ]
 }
