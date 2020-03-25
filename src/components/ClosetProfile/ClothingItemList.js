@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "./node_modules/react";
 import ClothingItemCard from "./ClothingItemCard";
 import ClosetManager from "../../modules/ClosetManager";
 

@@ -2,9 +2,11 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import Login from "./auth/Login";
 import NewUserForm from "./auth/NewUserForm";
-import ClothingItemList from "./ClosetProfile/ClothingItemList";
-import EditClothingItemForm from "../components/ClosetProfile/EditClothingItemForm"
-import AddClothingItemForm from "./ClosetProfile/AddClothingItemForm"
+import ClothingItemList from "./closetprofile/ClothingItemList";
+import EditClothingItemForm from "./closetprofile/EditClothingItemForm"
+import AddClothingItemForm from "./closetprofile/AddClothingItemForm"
+import GroupClosetList from "./closetprofile/GroupClosetList"
+import UserList from "./users/UserList"
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -53,7 +55,7 @@ const ApplicationViews = props => {
       />
        <Route
         exact
-        path="/{groupcloset}"
+        path="/:groupClosetNameId(\d+)/"
         render={props => {
           if (currentUser) {
             return <GroupClosetList currentUser={currentUser} {...props} />;
@@ -61,8 +63,13 @@ const ApplicationViews = props => {
             return <Redirect to="/login" />;
           }
         }} />
+        <Route
+        path="users"
+        render={props => {
+             return <UserList currentUser ={currentUser} {...props}/>;
+             />
     </React.Fragment>
   );
 };
 
-export default ApplicationViews;
+export default ApplicationViews

@@ -40,5 +40,5 @@ update(editedClothingItem) {
 //             "Content-Type": "application/json"
 //         },
 //         body:JSON.stringify(editedClothingItem)
-//     }) .then(resp => resp.json());
+//     }) .then(resp => resp.json())
   
