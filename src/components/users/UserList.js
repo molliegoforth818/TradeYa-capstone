@@ -21,7 +21,6 @@ console.log(user)
                     <UserCard
                         key={user.id}
                         user={user}
-                    //    getUsers={getUsers}
                         {...props} />)}
             </div>
         </React.Fragment>

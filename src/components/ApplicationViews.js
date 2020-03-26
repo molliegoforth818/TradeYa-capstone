@@ -7,6 +7,7 @@ import EditClothingItemForm from "./closetprofile/EditClothingItemForm";
 import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
 import GroupClosetList from "./closetprofile/GroupClosetList";
 import UserList from "./users/UserList";
+import ClosetProfileList from "./closetprofile/ClosetProfileList";
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -69,6 +70,15 @@ const ApplicationViews = props => {
         render={props => {
           return <UserList {...props} />;
         }}
+      />
+        <Route
+        path="/closet"
+        render={props => {
+            if (currentUser){
+          return <ClosetProfileList currentUser={currentUser} {...props} />;
+            } else {
+                return <Redirect to ="/login" />;
+        }}}
       />
     </React.Fragment>
   );
