@@ -2,9 +2,13 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import Login from "./auth/Login";
 import NewUserForm from "./auth/NewUserForm";
-import ClothingItemList from "./ClosetProfile/ClothingItemList";
-import EditClothingItemForm from "../components/ClosetProfile/EditClothingItemForm"
-import AddClothingItemForm from "./ClosetProfile/AddClothingItemForm"
+import ClothingItemList from "./closetprofile/ClothingItemList";
+import EditClothingItemForm from "./closetprofile/EditClothingItemForm";
+import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
+import GroupClosetList from "./groupcloset/GroupClosetList";
+import UserList from "./users/UserList";
+import ClosetProfileList from "./closetprofile/ClosetProfileList";
+import EditUserProfileForm from './closetprofile/EditClosetProfileForm'
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -35,13 +39,13 @@ const ApplicationViews = props => {
           return <NewUserForm setAsUser={setAsUser} {...props} />;
         }}
       />
-        <Route
+      <Route
         path="/:clothingItemId(\d+)/editclothingitem"
         render={props => {
           return <EditClothingItemForm {...props} />;
         }}
       />
-       <Route
+      <Route
         path="/closet/addnewclothingitem"
         render={props => {
           if (currentUser) {
@@ -51,16 +55,40 @@ const ApplicationViews = props => {
           }
         }}
       />
-       <Route
+      <Route
         exact
-        path="/{groupcloset}"
+        path="/mygroupclosets"
         render={props => {
           if (currentUser) {
             return <GroupClosetList currentUser={currentUser} {...props} />;
           } else {
             return <Redirect to="/login" />;
           }
-        }} />
+        }}
+      />
+      <Route
+        path="/users"
+        render={props => {
+          return <UserList {...props} />;
+        }}
+      />
+        <Route
+        exact
+        path="/closet"
+        render={props => {
+            if (currentUser){
+          return <ClosetProfileList currentUser={currentUser} {...props} />;
+            } else {
+                return <Redirect to ="/login" />;
+        }}}
+      />
+        <Route
+        path="/closet/:userId(\d+)/edituserprofile"
+        render={props => {
+          return <EditUserProfileForm {...props} />;
+        }}
+      />
+      
     </React.Fragment>
   );
 };

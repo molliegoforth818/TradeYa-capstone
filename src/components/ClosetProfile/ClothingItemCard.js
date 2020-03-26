@@ -1,18 +1,21 @@
 import React from "react";
 import ClosetManager from "../../modules/ClosetManager";
-// import Toggle from 'react-toggle'
 
 const ClothingItemCard = props => {
+const handleFieldChange =() => {
+ClosetManager.update(props.clothingItem)
+.then(()=> props.getAllClothingItemsByUser())
+}
   return (
     <div className="closetCard">
       <div className="closetCard__content">
         <h3>
-          Item Description:{" "}
+          item description:{" "}
           <span className="closetCard__itemdescription">
             {props.clothingItem.itemDescription}{" "}
           </span>
         </h3>
-        <p> Size: {props.clothingItem.size} </p>
+        <p> size: {props.clothingItem.size} </p>
         <button
           type="button"
           onClick={() =>
@@ -27,13 +30,13 @@ const ClothingItemCard = props => {
         >
           Delete Item
         </button>
-        <input
-          type="checkbox"
+        <button
+          type="button"
           required
           className="forms-control"
           id="clothingItem"
           value={false}
-          onChange={() => props.updateClothingItem(props.clothingItem.id)}
+          onChange={handleFieldChange}
         />
         <label htmlFor="isTraded">TradeYa!</label>
       </div>

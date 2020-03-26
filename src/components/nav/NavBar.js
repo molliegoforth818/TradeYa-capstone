@@ -51,6 +51,18 @@ const NavBar = props => {
               Users
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className="navlink"
+              to="/mygroupclosets"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "mint green"
+              }}
+            >
+              My Closets
+            </NavLink>
+          </li>
           {!props.currentUser ? (
             <li>
               <NavLink
