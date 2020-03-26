@@ -24,7 +24,7 @@ profilePic:""
           username: user.username,
           location: user.location,
           personalStyleDescription: user.personalStyleDescription,
-          profilePic: user.profile,
+          profilePic: user.profilePic,
           userId: userNow
         };
         ClosetProfileManager.update(editedClosetProfile).then(() => props.history.push("/closet/userprofile"));

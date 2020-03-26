@@ -10,12 +10,12 @@ ClosetManager.update(props.clothingItem)
     <div className="closetCard">
       <div className="closetCard__content">
         <h3>
-          Item Description:{" "}
+          item description:{" "}
           <span className="closetCard__itemdescription">
             {props.clothingItem.itemDescription}{" "}
           </span>
         </h3>
-        <p> Size: {props.clothingItem.size} </p>
+        <p> size: {props.clothingItem.size} </p>
         <button
           type="button"
           onClick={() =>
