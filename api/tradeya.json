@@ -108,6 +108,33 @@
       "userId": 1
     }
   ],
+  "groupClosetMembers:":[
+      {
+          "id": 1,
+          "userId": 1,
+          "groupClosetId":1
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "groupClosetId":2
+    },
+    {
+        "id": 3,
+        "userId": 1,
+        "groupClosetId":3
+    },
+    {
+        "id": 4,
+        "userId": 1,
+        "groupClosetId":4
+    },
+    {
+        "id": 5,
+        "userId": 1,
+        "groupClosetId":5
+    }
+  ],
   "clothingItem": [
     {
       "id": 2,
@@ -183,8 +210,8 @@
       "id": 1,
       "userId": 1,
       "clothingItemId": 1,
-      "datetime": "",
-      "isReturned": false
+      "isReturned": false,
+      "datetime": ""
     },
     {
       "id": 2,
