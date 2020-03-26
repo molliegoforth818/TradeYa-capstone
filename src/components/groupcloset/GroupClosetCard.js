@@ -1,10 +1,8 @@
 // import React from "react";
-// // import GroupClosetManager from "../../modules/GroupClosetManager";
+// import GroupClosetManager from "../../modules/GroupClosetManager";
 
 // const GroupClosetCard = props => {
-// const handleFieldChange = () =>{
 
-// }
 //   return (
 //     <div className="groupClosetCard">
 //       <div className="groupClosetCard__content">
@@ -30,7 +28,10 @@
 //         >
 //           Delete Item
 //         </button>
-//     <button 
+//         {
+//             (!props.clothingLend.isReturned)?
+//             <>
+//                <button 
 //           type="checkbox"
 //           required
 //           className="forms-control"
@@ -39,6 +40,9 @@
 //           onChange={() => props.isTraded(props.clothingItem)}
 //         />
 //         <label htmlFor="isTraded">TradeYa!</label>
+//             </> : null
+//         }
+ 
 //       </div>
 //     </div>
 //   );

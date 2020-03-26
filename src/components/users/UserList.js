@@ -13,7 +13,6 @@ const UserList = (props) => {
     useEffect(()=>{
         getUsers(); 
     },[]);
-console.log(user)
     return (
         <React.Fragment>
             <div className="container-usercard">

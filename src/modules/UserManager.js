@@ -7,4 +7,13 @@ export default{
     getAllUsers() {
         return fetch (`${baseURL}/users`).then(result => result.json());
 },
+update(user) {
+    return fetch(`${baseURL}/users/${user.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(user)
+    }).then(data => data.json());
+  }
 }

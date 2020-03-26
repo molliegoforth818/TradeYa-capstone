@@ -2,11 +2,11 @@
   "users": [
     {
       "id": 1,
-      "username": "madmollieg",
-      "password": "123",
-      "location": "nashville, tn",
+      "username": "madmolliegg",
+      "location": "ca$hville, tn",
       "personalStyleDescription": "ClassyGothInfluencer",
-      "profilePic": "https://pbs.twimg.com/media/EOUEtejWoAAsNEn.jpg"
+      "profilePic": "https://pbs.twimg.com/media/EOUEtejWoAAsNEn.jpg",
+      "userId": 1
     },
     {
       "id": 2,
@@ -74,11 +74,11 @@
     },
     {
       "id": 10,
-      "username": "beyoncé",
-      "password": "123",
-      "location": "houston, tx",
-      "personalStyleDescription": "TheQueen",
-      "profilePic": "https://www.beyonce.com/uploads/2018/12/cache/hfVrZj35NOmT_264x264_74tHK9Wi.jpg"
+      "username": "Beyoncé",
+      "location": "houston, TX",
+      "personalStyleDescription": "TheQueenBee",
+      "profilePic": "https://www.beyonce.com/uploads/2018/12/cache/hfVrZj35NOmT_264x264_74tHK9Wi.jpg",
+      "userId": 10
     }
   ],
   "groupCloset": [
@@ -201,11 +201,11 @@
       "isReturned": false
     },
     {
-        "id": 4,
-        "userId": 4,
-        "clothingItemId": 4,
-        "datetime": "",
-        "isReturned": false
-      }
+      "id": 4,
+      "userId": 4,
+      "clothingItemId": 4,
+      "datetime": "",
+      "isReturned": false
+    }
   ]
 }

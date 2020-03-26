@@ -5,7 +5,7 @@ import NewUserForm from "./auth/NewUserForm";
 import ClothingItemList from "./closetprofile/ClothingItemList";
 import EditClothingItemForm from "./closetprofile/EditClothingItemForm";
 import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
-import GroupClosetList from "./closetprofile/GroupClosetList";
+import GroupClosetList from "./groupcloset/GroupClosetList";
 import UserList from "./users/UserList";
 import ClosetProfileList from "./closetprofile/ClosetProfileList";
 import EditUserProfileForm from './closetprofile/EditClosetProfileForm'
@@ -57,7 +57,7 @@ const ApplicationViews = props => {
       />
       <Route
         exact
-        path="/:groupClosetNameId(\d+)/"
+        path="/mygroupclosets"
         render={props => {
           if (currentUser) {
             return <GroupClosetList currentUser={currentUser} {...props} />;
@@ -73,6 +73,7 @@ const ApplicationViews = props => {
         }}
       />
         <Route
+        exact
         path="/closet"
         render={props => {
             if (currentUser){
@@ -87,6 +88,7 @@ const ApplicationViews = props => {
           return <EditUserProfileForm {...props} />;
         }}
       />
+      
     </React.Fragment>
   );
 };
