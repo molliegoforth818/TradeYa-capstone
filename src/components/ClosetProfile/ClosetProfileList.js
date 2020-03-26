@@ -1,6 +1,5 @@
 import ClosetProfileManager from "../../modules/ClosetProfileManager";
 import React,{ useState, useEffect } from "react";
-import ClosetProfileCard from './ClosetProfileCard'
 
 const ClosetProfileList = (props) =>{
     const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
@@ -14,7 +13,6 @@ useEffect(()=>{
     getUser()
 },[])
 
-
 return (
     <React.Fragment>
 
@@ -23,21 +21,15 @@ return (
            <h1>{user.username}</h1>
        <p>{user.location}</p>
        <p>{user.personalStyleDescription}</p>
-       <div className="container-clothingProfileCards">
-        {users.map((userg) => (
-          <ClosetProfileCard
-            key={user.id}
-           user={user}
-            getUser={getUser}
-            {...props}
-          />
-        ))}
-      </div>
+           <button
+      type="button"
+      onClick={() => props.history.push(`closet/${user.id}/edituserprofile`)}
+    >
+      Edit Profile
+    </button>
        </div>
        
        </React.Fragment>
-      );
-    }
-
-
+)
+}
 export default ClosetProfileList 

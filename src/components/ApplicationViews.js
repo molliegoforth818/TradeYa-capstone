@@ -8,6 +8,7 @@ import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
 import GroupClosetList from "./closetprofile/GroupClosetList";
 import UserList from "./users/UserList";
 import ClosetProfileList from "./closetprofile/ClosetProfileList";
+import EditUserProfileForm from './closetprofile/EditClosetProfileForm'
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -79,6 +80,12 @@ const ApplicationViews = props => {
             } else {
                 return <Redirect to ="/login" />;
         }}}
+      />
+        <Route
+        path="/closet/:userId(\d+)/edituserprofile"
+        render={props => {
+          return <EditUserProfileForm {...props} />;
+        }}
       />
     </React.Fragment>
   );

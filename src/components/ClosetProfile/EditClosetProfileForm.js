@@ -3,7 +3,7 @@ import ClosetProfileManager from "../../modules/ClosetProfileManager"
 
 const userNow = parseInt(sessionStorage.getItem("userCredentials"));
 const EditClosetProfileForm = props => {
-    const [closetProfile, setClosetProfile] = useState ({
+    const [user, setUser] = useState ({
 username: "",
 location:"",
 personalStyleDescription:"",
@@ -11,9 +11,9 @@ profilePic:""
     });
     const [isLoading, setIsLoading] = useState(false);
     const handleFieldChange = evt => {
-        const stateToChange = { ...closetProfile };
+        const stateToChange = { ...user };
         stateToChange[evt.target.id] = evt.target.value;
-        setClosetProfile(stateToChange);
+        setUser(stateToChange);
       };
     const updateExistingClosetProfile = evt => {
         evt.preventDefault();
@@ -27,12 +27,12 @@ profilePic:""
           profilePic: user.profilePic,
           userId: userNow
         };
-        ClosetProfileManager.update(editedClosetProfile).then(() => props.history.push("/closet/userprofile"));
+        ClosetProfileManager.update(editedClosetProfile).then(() => props.history.push("/closet/"));
       };
     
       useEffect(() => {
         ClosetProfileManager.get(props.match.params.userId).then(user => {
-          setClosetProfile(closetProfile);
+          setUser(user);
           setIsLoading(false);
         });
       }, [props.match.params.userId]);
