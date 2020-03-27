@@ -3,8 +3,12 @@ export default {
     get(id){
         return fetch (`${baseURL}/groupclosetmembers/${id}`)
     },
-getAllGroupClosetMembers(){
-return fetch (`${baseURL}/groupclosetmembers?_expand=user`).then(result=>result.json());
-},
+    getAllGroupClosets(){
+        return fetch(`${baseURL}/groupClosets?_expand=user`)
+        .then(res => res.json())
+    }
+// getAllGroupClosetMembers(){
+// return fetch (`${baseURL}/groupclosetmembers?_expand=user`).then(result=>result.json());
+// },
 
 }

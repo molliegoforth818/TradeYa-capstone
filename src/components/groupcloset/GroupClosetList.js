@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from "react";
-import GroupClosetCard from "./ClothingItemCard";
+import GroupClosetCard from "./GroupClosetCard";
 import GroupClosetManager from "../../modules/GroupClosetManager";
 
+
+
 const GroupClosetList = props => {
-  const [closetMember, setClosetMember] = useState([]);
+  const [groupCloset, setGroupCloset] = useState([]);
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
 
-  const getClosetMember = () => {
-    return GroupClosetManager.getAllClosetMembers().then(FromAPI => {
-        const userClothingItem = clothingItemsFromAPI.filter(
-            clothingItem =>clothingItem.user.id === userNow
-        );
-        setClothingItem(userClothingItem)
-    });
+  const getGroupCloset = () => {
+    return GroupClosetManager.getAllGroupClosets().then(groupClosetsFromAPI => {
+        const userGroupCloset = groupClosetsFromAPI.filter(
+            groupCloset => groupCloset.userId === userNow
+        )
+    return userGroupCloset}
+        )
+        .then((userGroupCloset) => setGroupCloset(userGroupCloset))
 };
 useEffect(() => {
-    getClothingItem();
+    getGroupCloset();
 }, []);
   return (
     <React.Fragment>      
@@ -24,7 +27,7 @@ useEffect(() => {
           <GroupClosetCard
             key={groupCloset.id}
             groupCloset={groupCloset}
-            getClothingItem={getClothingItem}
+            getGroupCloset={getGroupCloset}
             {...props}
           />
         ))}

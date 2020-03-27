@@ -53,6 +53,15 @@ const EditClosetProfileForm = props => {
               id="username"
               value={user.username}
             />
+             <label htmlFor="username">password: </label>
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="username"
+              value={user.password}
+            />
             <label htmlFor="location">location: </label>
             <input
               type="text"

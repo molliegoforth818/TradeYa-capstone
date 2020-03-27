@@ -9,13 +9,15 @@ ClosetManager.update(props.clothingItem)
   return (
     <div className="closetCard">
       <div className="closetCard__content">
+      <img src= {props.clothingItem.clothingPic}/>
         <h3>
-          item description:{" "}
+          {" "}
           <span className="closetCard__itemdescription">
             {props.clothingItem.itemDescription}{" "}
           </span>
         </h3>
         <p> size: {props.clothingItem.size} </p>
+        
         <button
           type="button"
           onClick={() =>
@@ -32,13 +34,7 @@ ClosetManager.update(props.clothingItem)
         </button>
         <button
           type="button"
-          required
-          className="forms-control"
-          id="clothingItem"
-          value={false}
-          onChange={handleFieldChange}
-        />
-        <label htmlFor="isTraded">TradeYa!</label>
+          id="clothingItem"> TradeYa! </button>
       </div>
     </div>
   );

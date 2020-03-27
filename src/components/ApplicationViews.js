@@ -66,12 +66,12 @@ const ApplicationViews = props => {
           }
         }}
       />
-      <Route
+      {/* <Route
         path="/users"
         render={props => {
           return <UserList {...props} />;
         }}
-      />
+      /> */}
         <Route
         exact
         path="/closet"
