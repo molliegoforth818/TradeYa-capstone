@@ -1,31 +1,33 @@
 import React, { useEffect, useState } from "react";
-import GroupClosetMemberCard from "./GroupClosetMemberCard";
+import UserCard from "../users/UserCard";
 import GroupClosetManager from "../../modules/GroupClosetManager";
-
-
 
 const GroupClosetMemberList = props => {
   const [groupClosetMember, setGroupClosetMember] = useState([]);
-  const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
+  //   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
+  const groupClosetId = parseInt(props.match.params.groupClosetId);
 
   const getAllGroupClosetMember = () => {
-    return GroupClosetManager.getAllGroupClosetMembers().then(groupClosetMemberFromAPI => {
+    return GroupClosetManager.getAllGroupClosetMembers().then(
+      groupClosetMemberFromAPI => {
         const userGroupClosetMember = groupClosetMemberFromAPI.filter(
-            groupClosetMember => groupClosetMember.userId === userNow
+          groupClosetMember => groupClosetMember.groupClosetId === groupClosetId
         );
-setGroupClosetMember(userGroupClosetMember)
-})};
-useEffect(() => {
+        setGroupClosetMember(userGroupClosetMember);
+      }
+    );
+  };
+
+  useEffect(() => {
     getAllGroupClosetMember();
-}, []);
+  }, []);
   return (
-    <React.Fragment>      
+    <React.Fragment>
       <div className="container-closetCards">
         {groupClosetMember.map(groupClosetMember => (
-          <GroupClosetMemberCard
+          <UserCard
+            user={groupClosetMember.user}
             key={groupClosetMember.id}
-            groupClosetMember={groupClosetMember}
-            getAllGroupClosetMember={getAllGroupClosetMember}
             {...props}
           />
         ))}

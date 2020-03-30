@@ -8,7 +8,7 @@ const GroupClosetCard = props => {
       <div className="groupClosetCard__content">
         <h3 type="button"
           onClick={() =>
-            props.history.push(`/${props.groupCloset.groupClosetName}/closetmembers`)
+            props.history.push(`/closetmembers/${props.groupCloset.id}`)
           }>
          {props.groupCloset.groupClosetName}
         </h3>

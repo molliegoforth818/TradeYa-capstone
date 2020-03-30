@@ -3,6 +3,7 @@
     {
       "id": 1,
       "username": "madmollieg",
+      "password":"123",
       "location": "ca$hville, tn",
       "personalStyleDescription": "ClassyGothInfluencer",
       "profilePic": "https://pbs.twimg.com/media/EOUEtejWoAAsNEn.jpg",
@@ -127,7 +128,7 @@
       "userId": 1
     }
   ],
-  "groupClosetMembers:": [
+  "groupClosetMembers": [
     {
       "id": 1,
       "userId": 1,
@@ -152,6 +153,16 @@
       "id": 5,
       "userId": 1,
       "groupClosetId": 5
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "groupClosetId": 1
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "groupClosetId": 1
     }
   ],
   "clothingItem": [

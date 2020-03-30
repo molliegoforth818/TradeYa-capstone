@@ -9,9 +9,9 @@ const GroupClosetList = props => {
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
 
   const getGroupCloset = () => {
-    return GroupClosetManager.getAllGroupClosets().then(groupClosetsFromAPI => {
+    return GroupClosetManager.getAllGroupClosetMembers().then(groupClosetsFromAPI => {
         const userGroupCloset = groupClosetsFromAPI.filter(
-            groupCloset => groupCloset.userId === userNow
+            groupClosetMember => groupClosetMember.userId === userNow
         )
     return userGroupCloset}
         )
@@ -23,10 +23,10 @@ useEffect(() => {
   return (
     <React.Fragment>      
       <div className="container-closetCards">
-        {groupCloset.map(groupCloset => (
+        {groupCloset.map(closet => (
           <GroupClosetCard
-            key={groupCloset.id}
-            groupCloset={groupCloset}
+            key={closet.id}
+            groupCloset={closet.groupCloset}
             getGroupCloset={getGroupCloset}
             {...props}
           />
