@@ -6,7 +6,7 @@ import ClothingItemList from "./closetprofile/ClothingItemList";
 import EditClothingItemForm from "./closetprofile/EditClothingItemForm";
 import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
 import GroupClosetList from "./groupcloset/GroupClosetList";
-import UserList from "./users/UserList";
+import GroupClosetMemberList from "./groupcloset/GroupClosetMemberList";
 import ClosetProfileList from "./closetprofile/ClosetProfileList";
 import EditUserProfileForm from './closetprofile/EditClosetProfileForm'
 
@@ -66,12 +66,12 @@ const ApplicationViews = props => {
           }
         }}
       />
-      {/* <Route
-        path="/users"
+      <Route
+        path="/closetmembers"
         render={props => {
-          return <UserList {...props} />;
+          return <GroupClosetMemberList {...props} />;
         }}
-      /> */}
+      />
         <Route
         exact
         path="/closet"

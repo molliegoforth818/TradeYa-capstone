@@ -6,18 +6,12 @@ const GroupClosetCard = props => {
   return (
     <div className="groupClosetCard">
       <div className="groupClosetCard__content">
-        <h3>
+        <h3 type="button"
+          onClick={() =>
+            props.history.push(`/${props.groupCloset.groupClosetName}/closetmembers`)
+          }>
          {props.groupCloset.groupClosetName}
         </h3>
-        <button
-          type="button"
-          onClick={() =>
-            props.history.push(`/${props.groupCloset.groupClosetName}/mygroupcloset`)
-          }
-        >
-          View Closet
-        </button>
-    
       </div>
     </div>
   );

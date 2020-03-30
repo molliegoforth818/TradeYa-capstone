@@ -60,7 +60,7 @@ const NavBar = props => {
                 color: "mint green"
               }}
             >
-              My Closets
+              My Group Closets
             </NavLink>
           </li>
           {!props.currentUser ? (

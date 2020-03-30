@@ -3,7 +3,6 @@
     {
       "id": 1,
       "username": "madmollieg",
-      "password": "123",
       "location": "ca$hville, tn",
       "personalStyleDescription": "ClassyGothInfluencer",
       "profilePic": "https://pbs.twimg.com/media/EOUEtejWoAAsNEn.jpg",
@@ -75,11 +74,29 @@
     },
     {
       "id": 10,
-      "username": "Beyoncé",
-      "password":"123",
+      "username": "beyoncé",
+      "password": "123",
       "location": "houston, TX",
-      "personalStyleDescription": "TheQueenBee",
+      "personalStyleDescription": "BlueIvy'sMaid",
       "profilePic": "https://www.beyonce.com/uploads/2018/12/cache/XLgJRSb-QzJM_264x264_74tHK9Wi.jpg",
+      "userId": 10
+    },
+    {
+      "id": 10,
+      "username": "badgalrih",
+      "password": "123",
+      "location": "London,UK",
+      "personalStyleDescription": "cute'n'classy",
+      "profilePic": "https://pbs.twimg.com/media/ENoUgaZUcAAgpBT.jpg",
+      "userId": 10
+    },
+    {
+      "id": 10,
+      "username": "nickiminaj",
+      "password": "123",
+      "location": "Queens,NY",
+      "personalStyleDescription": "dabaddest",
+      "profilePic": "https://www.rap-up.com/app/uploads/2020/02/nicki-minaj-green.jpg",
       "userId": 10
     }
   ],
@@ -123,7 +140,7 @@
     },
     {
       "id": 3,
-      "userId": 1,
+      "userId": 10,
       "groupClosetId": 3
     },
     {
@@ -169,13 +186,6 @@
       "userId": 5,
       "isTraded": false,
       "clothingPic": "img"
-    },
-    {
-      "id": 8,
-      "itemDescription": "IvyPark Super Sleek 72",
-      "size": "6",
-      "userId": 10,
-      "clothingPic": "https://cdn.runrepeat.com/i/adidas/33929/adidas-ivy-park-super-sleek-72-ede7-600.jpg"
     },
     {
       "id": 9,
