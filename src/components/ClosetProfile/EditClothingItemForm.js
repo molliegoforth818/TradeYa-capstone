@@ -37,7 +37,7 @@ return (
           <form>
             <fieldset>
               <div className="formgrid">
-                <label htmlFor="itemDescription">Item Description: </label>
+                <label htmlFor="itemDescription">item description: </label>
                 <input
                   type="text"
                   required
@@ -46,7 +46,7 @@ return (
                   id="itemDescription"
                   value={clothingItem.itemDescription}
                 />
-                <label htmlFor="size">Size: </label>
+                <label htmlFor="size">size: </label>
                 <input
                   type="text"
                   required
@@ -54,6 +54,15 @@ return (
                   onChange={handleFieldChange}
                   id="size"
                   value={clothingItem.size}
+                />
+                  <label htmlFor="clothingPic">image: </label>
+                <input
+                  type="url"
+                  required
+                  className="form-control"
+                  onChange={handleFieldChange}
+                  id="clothingPic"
+                  value={clothingItem.clothingPic}
                 />
                 </div>
               <div className="alignRight">

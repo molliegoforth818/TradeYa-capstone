@@ -51,6 +51,14 @@ const AddClothingItemForm = props => {
               id="size"
               placeholder="size"
             />
+             <label htmlFor="size">Image: </label>
+            <input
+              type="url"
+              required
+              onChange={handleFieldChange}
+              id="clothingPic"
+              placeholder="clothingPic"
+            />
           </div>
           <div className="alignRight">
             <button

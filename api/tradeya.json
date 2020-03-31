@@ -2,7 +2,8 @@
   "users": [
     {
       "id": 1,
-      "username": "madmolliegg",
+      "username": "madmollieg",
+      "password": "123",
       "location": "ca$hville, tn",
       "personalStyleDescription": "ClassyGothInfluencer",
       "profilePic": "https://pbs.twimg.com/media/EOUEtejWoAAsNEn.jpg",
@@ -74,14 +75,32 @@
     },
     {
       "id": 10,
-      "username": "Beyoncé",
+      "username": "beyoncé",
       "location": "houston, TX",
-      "personalStyleDescription": "TheQueenBee",
-      "profilePic": "https://www.beyonce.com/uploads/2018/12/cache/hfVrZj35NOmT_264x264_74tHK9Wi.jpg",
+      "personalStyleDescription": "BlueIvy'sMaid",
+      "profilePic": "https://www.beyonce.com/uploads/2018/12/cache/XLgJRSb-QzJM_264x264_74tHK9Wi.jpg",
+      "userId": 10
+    },
+    {
+      "id": 10,
+      "username": "badgalrih",
+      "password": "123",
+      "location": "London,UK",
+      "personalStyleDescription": "cute'n'classy",
+      "profilePic": "https://pbs.twimg.com/media/ENoUgaZUcAAgpBT.jpg",
+      "userId": 10
+    },
+    {
+      "id": 10,
+      "username": "nickiminaj",
+      "password": "123",
+      "location": "Queens,NY",
+      "personalStyleDescription": "dabaddest",
+      "profilePic": "https://www.rap-up.com/app/uploads/2020/02/nicki-minaj-green.jpg",
       "userId": 10
     }
   ],
-  "groupCloset": [
+  "groupClosets": [
     {
       "id": 1,
       "groupClosetName": "THEE HOTT GIRLS ROOM",
@@ -94,7 +113,7 @@
     },
     {
       "id": 3,
-      "groupClosetName": "RNB",
+      "groupClosetName": "R.N.B",
       "userId": 10
     },
     {
@@ -106,6 +125,43 @@
       "id": 5,
       "groupClosetName": "🌑 The Coven 🌙",
       "userId": 1
+    }
+  ],
+  "groupClosetMembers": [
+    {
+      "id": 1,
+      "userId": 1,
+      "groupClosetId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "groupClosetId": 2
+    },
+    {
+      "id": 3,
+      "userId": 10,
+      "groupClosetId": 3
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "groupClosetId": 4
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "groupClosetId": 5
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "groupClosetId": 1
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "groupClosetId": 1
     }
   ],
   "clothingItem": [
@@ -142,17 +198,11 @@
       "clothingPic": "img"
     },
     {
-      "id": 8,
-      "itemDescription": "Gucci Blouse",
-      "size": "medium",
-      "isTraded": false,
-      "userId": 10
-    },
-    {
       "id": 9,
       "itemDescription": "AirMax 270",
       "size": "7",
       "userId": 7,
+      "isTraded": false,
       "clothingPic": "img"
     },
     {
@@ -160,6 +210,7 @@
       "itemDescription": "Vintage Ramones Tee",
       "size": "medium",
       "userId": 8,
+      "isTraded": false,
       "clothingPic": "img"
     },
     {
@@ -167,15 +218,23 @@
       "itemDescription": "Express Leather Jacket",
       "size": "large",
       "userId": 9,
+      "isTraded": false,
       "clothingPic": "img"
     },
     {
       "id": 12,
-      "itemDescription": "IvyPark Backless Hat",
-      "size": "onesize",
+      "itemDescription": "Gucci Blouse",
+      "size": "medium",
       "userId": 1,
       "clothingPic": "img",
-      "isTraded": true
+      "isTraded": false
+    },
+    {
+      "id": 13,
+      "itemDescription": "IvyPark Dress",
+      "size": "12",
+      "isTraded": false,
+      "userId": 10
     }
   ],
   "clothingLend": [
@@ -183,8 +242,8 @@
       "id": 1,
       "userId": 1,
       "clothingItemId": 1,
-      "datetime": "",
-      "isReturned": false
+      "isReturned": false,
+      "datetime": ""
     },
     {
       "id": 2,

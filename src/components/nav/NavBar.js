@@ -39,7 +39,7 @@ const NavBar = props => {
               Donation Pile
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className="navlink"
               to="/users"
@@ -50,7 +50,7 @@ const NavBar = props => {
             >
               Users
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               className="navlink"
@@ -60,7 +60,7 @@ const NavBar = props => {
                 color: "mint green"
               }}
             >
-              My Closets
+              My Group Closets
             </NavLink>
           </li>
           {!props.currentUser ? (
