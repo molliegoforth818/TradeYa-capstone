@@ -9,7 +9,7 @@ const GroupClosetMemberList = props => {
 
   const getAllGroupClosetMember = () => {
     return GroupClosetManager.getAllGroupClosetMembers().then(
-      groupClosetMemberFromAPI => {
+      groupClosetMemberFromAPI => {                                       //getting the groupClosetId on the closetMember table to show closet members
         const userGroupClosetMember = groupClosetMemberFromAPI.filter(
           groupClosetMember => groupClosetMember.groupClosetId === groupClosetId
         );
@@ -24,7 +24,7 @@ const GroupClosetMemberList = props => {
   return (
     <React.Fragment>
       <div className="container-closetCards">
-        {groupClosetMember.map(groupClosetMember => (
+        {groupClosetMember.map(groupClosetMember => (    //returning the username and profpic in the closet members
           <UserCard
             user={groupClosetMember.user}
             key={groupClosetMember.id}

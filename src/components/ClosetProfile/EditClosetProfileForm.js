@@ -24,6 +24,7 @@ const EditClosetProfileForm = props => {
       id: props.match.params.userId,
       username: user.username,
       location: user.location,
+      password:user.password,
       personalStyleDescription: user.personalStyleDescription,
       profilePic: user.profilePic,
       userId: userNow
@@ -53,13 +54,13 @@ const EditClosetProfileForm = props => {
               id="username"
               value={user.username}
             />
-             <label htmlFor="username">password: </label>
+             <label htmlFor="password">password: </label>
             <input
               type="text"
               required
               className="form-control"
               onChange={handleFieldChange}
-              id="username"
+              id="password"
               value={user.password}
             />
             <label htmlFor="location">location: </label>

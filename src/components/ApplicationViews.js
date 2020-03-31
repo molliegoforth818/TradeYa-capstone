@@ -9,7 +9,7 @@ import GroupClosetList from "./groupcloset/GroupClosetList";
 import GroupClosetMemberList from "./groupcloset/GroupClosetMemberList";
 import ClosetProfileList from "./closetprofile/ClosetProfileList";
 import EditUserProfileForm from './closetprofile/EditClosetProfileForm'
-import ClosetMemberView from './groupcloset/GroupClosetMemberList'
+import ClosetMemberView from './users/ClosetMemberView'
 
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
@@ -90,7 +90,7 @@ const ApplicationViews = props => {
         }}
       />
         <Route
-        path="/closet:userId(\d+)"
+        path="/closet/:userId(\d+)"
         render={props => {
           return <ClosetMemberView {...props} />;
         }}
