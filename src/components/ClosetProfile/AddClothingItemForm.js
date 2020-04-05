@@ -8,7 +8,8 @@ const AddClothingItemForm = props => {
     userId: userCred,
    itemDescription: "",
     size: "",
-    isTraded: false
+    isTraded: false,
+    clothingPic: ""
   });
   const [isLoading, setIsLoading] = useState(false);
 

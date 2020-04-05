@@ -3,8 +3,7 @@ import LoginManager from "../../modules/LoginManager";
 
 const NewUserForm = props => {
   const [newUserInfo, setNewUserInfo] = useState({
-    username: "",
-    password: ""
+    username: ""
   });
   const [isAvailable, setIsAvailable] = useState(false);
 
@@ -26,20 +25,19 @@ const NewUserForm = props => {
         window.alert("This is already a registered user!");
       } else {
         if (
-          newUserInfo.username === "" ||
-          newUserInfo.password === ""
+          newUserInfo.username === ""
         ) {
-          window.alert("You must have a valid email and password! No blanks!");
+          window.alert("You must have a valid username! No blanks!");
         } else {
           LoginManager.post(newUserInfo).then(() => {
             LoginManager.getUsers().then(userArray => {
               const user = userArray.find(
                 el =>
-                  el.username === newUserInfo.username &&
-                  el.password === newUserInfo.password
+                  el.username === newUserInfo.username
               );
               props.setAsUser(user.id);
               setIsAvailable(false);
+              props.history.push("/closet")
             });
           });
         }
@@ -59,13 +57,6 @@ const NewUserForm = props => {
             id="username"
             required=""
             autoFocus=""
-          />
-          <label htmlFor="inputPassword">Password: </label>
-          <input
-            onChange={handleFieldChange}
-            type="password"
-            id="password"
-            required=""
           />
             <label htmlFor="inputLocation">Location: </label>
           <input

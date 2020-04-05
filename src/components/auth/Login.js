@@ -3,8 +3,7 @@ import LoginManager from "../../modules/LoginManager";
 
 const Login = props => {
   const [userCredentials, setUserCredentials] = useState({
-    username: "",
-    password: ""
+    username: ""
   });
 
   const handleFieldChange = evt => {
@@ -19,8 +18,7 @@ const Login = props => {
     LoginManager.getUsers().then(userArray => {
       const user = userArray.find(
         el =>
-          el.username === userCredentials.username &&
-          el.password === userCredentials.password
+          el.username === userCredentials.username
       );
 
       if (user !== undefined) {
@@ -50,15 +48,6 @@ const Login = props => {
               placeholder="Username"
               required=""
               autoFocus=""
-            />
-
-            <label htmlFor="inputPassword">Password: </label>
-            <input
-              onChange={handleFieldChange}
-              type="password"
-              id="password"
-              placeholder="Password"
-              required=""
             />
            
           </div>
