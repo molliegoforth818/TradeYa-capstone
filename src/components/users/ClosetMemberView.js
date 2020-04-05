@@ -12,7 +12,7 @@ const ClosetMemberView = props => {
   };
   useEffect(() => {
     getUsers();
-  }, []);
+  }, [closetMember]);
 
   return (
     <>

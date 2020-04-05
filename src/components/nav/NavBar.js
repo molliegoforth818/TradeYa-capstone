@@ -27,7 +27,7 @@ const NavBar = props => {
               Closet
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className="navlink"
               to="/donationpile"
@@ -37,18 +37,6 @@ const NavBar = props => {
               }}
             >
               Donation Pile
-            </NavLink>
-          </li>
-          {/* <li>
-            <NavLink
-              className="navlink"
-              to="/users"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "mint green"
-              }}
-            >
-              Users
             </NavLink>
           </li> */}
           <li>

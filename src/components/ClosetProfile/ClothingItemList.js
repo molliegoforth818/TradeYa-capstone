@@ -5,22 +5,23 @@ import ClosetManager from "../../modules/ClosetManager";
 const ClothingItemList = props => {
   const [clothingItem, setClothingItem] = useState([]);
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
-  
-  const deleteClothingItem = (id) => {
-    ClosetManager.deleteClothingItem(id)
-    .then(() => getClothingItem());
+
+  const deleteClothingItem = id => {
+    ClosetManager.deleteClothingItem(id).then(() => getClothingItem());
   };
   const getClothingItem = () => {
-    return ClosetManager.getAllClothingItemsByUser().then(clothingItemsFromAPI => {
+    return ClosetManager.getAllClothingItemsByUser().then(
+      clothingItemsFromAPI => {
         const userClothingItem = clothingItemsFromAPI.filter(
-            clothingItem =>clothingItem.user.id === userNow
+          clothingItem => clothingItem.user.id === userNow
         );
-        setClothingItem(userClothingItem)
-    });
-};
-useEffect(() => {
+        setClothingItem(userClothingItem);
+      }
+    );
+  };
+  useEffect(() => {
     getClothingItem();
-}, []);
+  }, []);
   return (
     <React.Fragment>
       <section className="task-content">
@@ -35,10 +36,10 @@ useEffect(() => {
         </button>
       </section>
       <div className="container-closetCards">
-        {clothingItem.map(clothingItem => (
+        {clothingItem.map(item => (
           <ClothingItemCard
-            key={clothingItem.id}
-            clothingItem={clothingItem}
+            key={item.id}
+            clothingItem={item}
             deleteClothingItem={deleteClothingItem}
             getClothingItem={getClothingItem}
             {...props}
