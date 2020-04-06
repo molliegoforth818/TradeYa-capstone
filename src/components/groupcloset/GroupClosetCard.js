@@ -10,7 +10,8 @@ const GroupClosetCard = props => {
           onClick={() =>
             props.history.push(`/closetmembers/${props.groupCloset.id}`)
           }>
-         {props.groupCloset.groupClosetName}
+        
+        <p>{props.groupCloset.groupClosetName}</p>
         </h3>
       </div>
     </div>
