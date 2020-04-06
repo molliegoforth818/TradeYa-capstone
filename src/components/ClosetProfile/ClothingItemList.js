@@ -13,7 +13,7 @@ const ClothingItemList = props => {
     return ClosetManager.getAllClothingItemsByUser().then(
       clothingItemsFromAPI => {
         const userClothingItem = clothingItemsFromAPI.filter(
-          clothingItem => clothingItem.user.id === userNow
+          clothingItem => clothingItem.userId === userNow
         );
         setClothingItem(userClothingItem);
       }
