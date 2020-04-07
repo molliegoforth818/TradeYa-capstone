@@ -190,10 +190,9 @@
     {
       "id": 1,
       "itemDescription": "FashionNova Skirt",
-      "size": "medium",
-      "userId": 1,
-      "isTraded": true,
-      "clothingPic": "https://img.ltwebstatic.com/images2_pi/2019/08/05/15649926821311780450_thumbnail_900x1199.webp"
+      "size": "Small",
+      "clothingPic": "https://img.ltwebstatic.com/images2_pi/2019/08/05/15649926821311780450_thumbnail_900x1199.webp",
+      "userId": 1
     },
     {
       "id": 2,
@@ -274,6 +273,21 @@
       "isTraded": false,
       "userId": 9,
       "clothingPic": "https://img.ltwebstatic.com/images2_pi/2019/03/13/1552460998131537829_thumbnail_405x552.webp"
+    },
+    {
+      "id": 12,
+      "itemDescription": "Black Heels",
+      "size": "5",
+      "clothingPic": "https://assets.torrid.com/is/image/torrid/11227583_hi?$td_pdp_thumbnail_zoom_image$",
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "itemDescription": "Black Crop Top",
+      "size": "Medium",
+      "isTraded": false,
+      "clothingPic": "http://www.abaday.com/upload/thumbnail/upload_images_product_2016_03_CXA7F8_1_90x.jpg",
+      "id": 13
     }
   ],
   "clothingLend": [

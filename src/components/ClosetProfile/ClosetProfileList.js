@@ -1,5 +1,6 @@
 import ClosetProfileManager from "../../modules/ClosetProfileManager";
 import React, { useState, useEffect } from "react";
+import "./ClosetProfileList.css"
 
 const ClosetProfileList = props => {
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
@@ -17,8 +18,8 @@ const ClosetProfileList = props => {
   return (
     <React.Fragment>
       <div className="container-userprofileCards">
-        <img src={user.profilePic} />
-        <h1>{user.username}</h1>
+        <img className="profile-pic"src={user.profilePic} />
+        <h1 className="user-name">{user.username}</h1>
         <p>{user.location}</p>
         <p>{user.personalStyleDescription}</p>
         <button

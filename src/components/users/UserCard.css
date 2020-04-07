@@ -1,18 +1,22 @@
 .userCard {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border-style: double;
+   border-color: #A0B787;
     display: inline-flex;
     margin: 35px;
-    background-color:#FCDFA6;
+    background-image: linear-gradient(#FCDFA6,#E09F6D);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .userCard-content{
     color: ACBEA3;
     padding: 10px;
-    background-color: #214E34
+    background-color: #214E34;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .userCard_username{
     color: ACBEA3;
     padding: 10px;
-    background-color: #214E34
+    background-color: #214E34;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .profile-pic{
     box-sizing: border-box;

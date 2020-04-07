@@ -4,8 +4,10 @@ import "./UserCard.css"
 const UserCard = props => {
 
   return (
+    <>
     <div className="userCard">
       <div className="userCard__content">
+      
         <h3>
           {""}
           <span
@@ -19,6 +21,7 @@ const UserCard = props => {
         </h3>
       </div>
     </div>
+    </>
   );
 };
 export default UserCard;

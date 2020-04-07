@@ -1,5 +1,5 @@
 import React from "react";
-// import GroupClosetManager from "../../modules/GroupClosetManager";
+import "./GroupClosetCard.css"
 
 const GroupClosetCard = props => {
 

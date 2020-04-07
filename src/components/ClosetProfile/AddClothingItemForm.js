@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ClosetManager from "../../modules/ClosetManager"
 
-const userCred = sessionStorage.getItem("userCredentials");
+const userCred = parseInt(sessionStorage.getItem("userCredentials"));
 
 const AddClothingItemForm = props => {
   const [clothingItem, setClothingItem] = useState({
@@ -19,7 +19,7 @@ const AddClothingItemForm = props => {
     setClothingItem(stateToChange);
   };
   const constructNewClothingItem = evt => {
-    const userCred = sessionStorage.getItem("userCredentials");
+    const userCred = parseInt(sessionStorage.getItem("userCredentials"));
     evt.preventDefault();
     if (userCred === null) {
       window.alert("Please login to enter item description and size");
