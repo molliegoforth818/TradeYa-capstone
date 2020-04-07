@@ -1,0 +1,18 @@
+.groupClosetCard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: #C17E47;
+    margin-bottom: 2em;
+    flex: 0 1 24%;
+    background-image: linear-gradient(#FCDFA6,#E09F6D);
+}
+.groupClosetCard__content{
+    padding: .5em;
+}
+.groupClosetCard__content h3{
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #214E34;
+}

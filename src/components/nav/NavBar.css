@@ -2,20 +2,24 @@
 
 
 header {
-    background-color: rgb(212, 170, 188);
-    border-color: rgb(227, 175, 238);
-    font-style: italic;
+    background-color: #A0B787;
+    border-radius: 5px;
+  border-style: double;
+  border-color: #E09F6D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
 }
 
 .project-title {
-    color: seashell;
+    color: #214E34;
     text-align: center;
 }
 
 .navlink-container {
     display: flex;
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+   
 }
 
 .navlink-container li {
@@ -23,14 +27,14 @@ header {
     padding: 10px;
     text-align:center;
     font-size: 1.5em;
-    color: whitesmoke;
-    background-color: rgb(155, 101, 138);
+    color:#214E34 ;
+    background-color:#A0B787;
     list-style-type: none;
     box-sizing: border-box;
 }
 
 .navlink {
-    color: whitesmoke;
+    color: #214E34;
     text-decoration: underline;
     cursor: pointer;
 }

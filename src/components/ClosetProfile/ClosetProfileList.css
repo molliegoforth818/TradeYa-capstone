@@ -1,0 +1,13 @@
+.container-userprofileCards {
+  border-style: double;
+  border-radius: 5px;
+  border-color: #a0b787;
+  border-width: 10px;
+  background-image: linear-gradient(#FCDFA6,#E09F6D);
+}
+.profile-pic{
+    border-radius: 5px;
+}
+.user-name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

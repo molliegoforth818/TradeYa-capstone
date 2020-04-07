@@ -1,14 +1,18 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ClosetProfileManager from "../../modules/ClosetProfileManager";
 import ClothingItemCard from "../closetprofile/ClothingItemCard";
 
-const ClosetMemberView = props => {
-  const [closetMember, setClosetMember] = useState({clothingItem:[]});
+const ClosetMemberView = (props) => {
+  const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
+
+  const [closetMember, setClosetMember] = useState({ clothingItem: [] });
 
   const getUsers = () => {
-    ClosetProfileManager.getUserProfile(props.match.params.userId).then(usersFromAPI => {
-      setClosetMember(usersFromAPI);
-    });
+    ClosetProfileManager.getUserProfile(props.match.params.userId).then(
+      (usersFromAPI) => {
+        setClosetMember(usersFromAPI);
+      }
+    );
   };
   useEffect(() => {
     getUsers();
@@ -17,7 +21,7 @@ const ClosetMemberView = props => {
   return (
     <>
       <div className="closetmemberview-cards">
-        {closetMember.clothingItem.map(clothingItem => (
+        {closetMember.clothingItem.map((clothingItem) => (
           <ClothingItemCard
             key={clothingItem.id}
             clothingItem={clothingItem}
@@ -28,5 +32,4 @@ const ClosetMemberView = props => {
     </>
   );
 };
-
 export default ClosetMemberView;

@@ -1,0 +1,51 @@
+.closetCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: inline-flex;
+    margin: 35px;
+    background-color:#FCDFA6;
+  }
+  
+  .card-content {
+    padding: .5em;
+  }
+  img {
+    max-width: 100px;
+    border-radius: 5px;
+    height:auto;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+    color:#214E34;
+  }
+  
+  .card-content p {
+    font-size: 80%;
+    color: darkslategrey;
+  }
+  
+  .content-petname {
+    color: darkslategrey;
+  }
+  
+  .card button {
+    background-color: cornflowerblue;
+    border: none;
+    color: cornsilk;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: .5em;
+    border-radius: 2px;
+    margin: .1em;
+    width: 100%;
+  }
+  
+  .card button:hover {
+    background-color: darkblue;
+  }

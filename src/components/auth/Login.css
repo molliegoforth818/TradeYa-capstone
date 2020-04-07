@@ -1,0 +1,23 @@
+.login{
+    border-style: double;
+    border-width: 10px;
+    border-color: #A0B787;
+    background-color:#FCDFA6;
+}
+.header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #214E34;
+}
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #214E34;
+}
+input{
+    border-radius: 5px;
+}
+button{
+    background-color: #E09F6D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    color: #214E34;
+}

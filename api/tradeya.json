@@ -190,10 +190,9 @@
     {
       "id": 1,
       "itemDescription": "FashionNova Skirt",
-      "size": "medium",
-      "userId": 1,
-      "isTraded": true,
-      "clothingPic": "https://img.ltwebstatic.com/images2_pi/2019/08/05/15649926821311780450_thumbnail_900x1199.webp"
+      "size": "Small",
+      "clothingPic": "https://img.ltwebstatic.com/images2_pi/2019/08/05/15649926821311780450_thumbnail_900x1199.webp",
+      "userId": 1
     },
     {
       "id": 2,
@@ -274,6 +273,44 @@
       "isTraded": false,
       "userId": 9,
       "clothingPic": "https://img.ltwebstatic.com/images2_pi/2019/03/13/1552460998131537829_thumbnail_405x552.webp"
+    },
+    {
+      "id": 12,
+      "itemDescription": "Black Heels",
+      "size": "5",
+      "clothingPic": "https://assets.torrid.com/is/image/torrid/11227583_hi?$td_pdp_thumbnail_zoom_image$",
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "itemDescription": "Black Crop Top",
+      "size": "Medium",
+      "isTraded": false,
+      "clothingPic": "http://www.abaday.com/upload/thumbnail/upload_images_product_2016_03_CXA7F8_1_90x.jpg",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "itemDescription": "Light Wash Distressed Jeans",
+      "size": "2",
+      "clothingPic": "https://cdn-img.prettylittlething.com/a/e/6/c/ae6c76f1d35855dd572891dc2471e776a9bee86f_clx7256_3.jpg?imwidth=60",
+      "userId": 2
+    },
+    {
+      "userId": 2,
+      "itemDescription": "Flaming Vans",
+      "size": "6",
+      "isTraded": false,
+      "clothingPic": "https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Vans-Old-Skool-Flame-Black-%26-White-Skate-Shoes-_279736.jpg",
+      "id": 15
+    },
+    {
+      "userId": 12,
+      "itemDescription": "IvyPark Super Sleek 72",
+      "size": "8",
+      "isTraded": false,
+      "clothingPic": "https://stockx-360.imgix.net/adidas-Sleek-Super-72-Beyonce-Ivy-Park-W/Images/adidas-Sleek-Super-72-Beyonce-Ivy-Park-W/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1579019780&w=1000",
+      "id": 16
     }
   ],
   "clothingLend": [
