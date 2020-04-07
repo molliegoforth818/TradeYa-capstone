@@ -1,11 +1,11 @@
 import React from "react";
+import "./UserCard.css"
 
 const UserCard = props => {
 
   return (
-    <div className="closetCard">
-      <div className="closetCard__content">
-    
+    <div className="userCard">
+      <div className="userCard__content">
         <h3>
           {""}
           <span
@@ -13,7 +13,7 @@ const UserCard = props => {
             type="button"
             onClick={() => props.history.push(`/closet/${props.user.id}`)}
           >
-            <img src={props.user.profilePic} />
+            <img className="profile-pic" src={props.user.profilePic} />
             {props.user.username}{" "}
           </span>
         </h3>

@@ -1,0 +1,20 @@
+.userCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: inline-flex;
+    margin: 35px;
+    background-color:#FCDFA6;
+}
+.userCard-content{
+    color: ACBEA3;
+    padding: 10px;
+    background-color: #214E34
+}
+.userCard_username{
+    color: ACBEA3;
+    padding: 10px;
+    background-color: #214E34
+}
+.profile-pic{
+    box-sizing: border-box;
+}
+

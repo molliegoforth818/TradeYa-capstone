@@ -24,7 +24,7 @@ const ClothingItemList = props => {
   }, []);
   return (
     <React.Fragment>
-      <section className="task-content">
+      <section className="clothingItem-content">
         <button
           type="button"
           className="btn"

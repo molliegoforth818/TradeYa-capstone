@@ -1,5 +1,6 @@
 import React from "react";
 import ClosetManager from "../../modules/ClosetManager";
+import "./ClothingItemCard.css"
 
 const ClothingItemCard = props => {
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));

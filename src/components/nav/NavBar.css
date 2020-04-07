@@ -2,13 +2,14 @@
 
 
 header {
-    background-color: rgb(212, 170, 188);
-    border-color: rgb(227, 175, 238);
-    font-style: italic;
+    background-color: #ACBEA3;
+    border-radius: 50px;
+  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .project-title {
-    color: seashell;
+    color: #FCDFA6;
     text-align: center;
 }
 
@@ -23,14 +24,14 @@ header {
     padding: 10px;
     text-align:center;
     font-size: 1.5em;
-    color: whitesmoke;
-    background-color: rgb(155, 101, 138);
+    color:#C59849 ;
+    background-color:#ACBEA3;
     list-style-type: none;
     box-sizing: border-box;
 }
 
 .navlink {
-    color: whitesmoke;
+    color: #C59849;
     text-decoration: underline;
     cursor: pointer;
 }
