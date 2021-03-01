@@ -3,15 +3,7 @@ TradeYa! is an app where you can trade clothes with your friends with just a cli
 
 
 # Testing Instructions
-1. Visit this link: https://github.com/molliegoforth818/TradeYa-capstone
-
-2. git clone this repo
-
-3. To install all libraries and their dependencies, run npm install
-
-4. Make a copy of Database/db.backup.json and run json-server -p 8088 -w *your copy of db.backup.json*
-
-5. npm start in root directory to start react server
+1. Visit this link: https://trade-ya.netlify.app
 
 # Technologies Used
 React 
