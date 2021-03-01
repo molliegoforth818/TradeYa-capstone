@@ -2,13 +2,13 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import Login from "./auth/Login";
 import NewUserForm from "./auth/NewUserForm";
-import ClothingItemList from "./closetprofile/ClothingItemList";
-import EditClothingItemForm from "./closetprofile/EditClothingItemForm";
-import AddClothingItemForm from "./closetprofile/AddClothingItemForm";
+import ClothingItemList from "./ClosetProfile/ClothingItemList";
+import EditClothingItemForm from "./ClosetProfile/EditClothingItemForm";
+import AddClothingItemForm from "./ClosetProfile/AddClothingItemForm";
 import GroupClosetList from "./groupcloset/GroupClosetList";
 import GroupClosetMemberList from "./groupcloset/GroupClosetMemberList";
-import ClosetProfileList from "./closetprofile/ClosetProfileList";
-import EditUserProfileForm from './closetprofile/EditClosetProfileForm'
+import ClosetProfileList from "./ClosetProfile/ClosetProfileList";
+import EditUserProfileForm from './ClosetProfile/EditClosetProfileForm'
 import ClosetMemberView from './users/ClosetMemberView'
 
 const ApplicationViews = props => {

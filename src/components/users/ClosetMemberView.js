@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ClosetProfileManager from "../../modules/ClosetProfileManager";
-import ClothingItemCard from "../closetprofile/ClothingItemCard";
+import ClothingItemCard from "../ClosetProfile/ClothingItemCard";
 
 const ClosetMemberView = (props) => {
   const userNow = JSON.parse(sessionStorage.getItem("userCredentials"));
