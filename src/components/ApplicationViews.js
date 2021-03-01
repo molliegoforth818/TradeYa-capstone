@@ -14,7 +14,7 @@ import ClosetMemberView from './users/ClosetMemberView'
 const ApplicationViews = props => {
   const currentUser = props.currentUser;
   const setAsUser = props.setAsUser;
-
+console.log("Hello")
   return (
     <React.Fragment>
       <Route
